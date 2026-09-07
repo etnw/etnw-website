@@ -1,0 +1,16 @@
+{
+  // Static assets only, no Worker script. The asset directory is deliberately
+  // ./public and not the repo root: serving the root also served .git/ and
+  // CLAUDE.md, so anything not meant for the public web stays one level up.
+  "name": "etnw-website",
+  "compatibility_date": "2026-09-07",
+  "assets": {
+    "directory": "./public"
+  },
+  "observability": {
+    "enabled": true
+  },
+  // Non-production branch builds run `wrangler versions upload`, which uploads a
+  // version without promoting it. This is what serves it at a preview URL.
+  "preview_urls": true
+}

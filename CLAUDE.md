@@ -2,7 +2,7 @@
 
 ## Project overview
 
-Rebuilding etnw.eu, Etienne Winkelmuller's personal professional website, replacing an expired Squarespace site. Static site, plain HTML/CSS preferred, no framework or build step unless there's a real reason for one. Deploy target: Cloudflare Pages. Legal entity behind the site: ETNW Consulting (Einzelunternehmen, Munich).
+Rebuilding etnw.eu, Etienne Winkelmuller's personal professional website, replacing an expired Squarespace site. Static site, plain HTML/CSS preferred, no framework or build step unless there's a real reason for one. Deploy target: Cloudflare Workers static assets (the project is a Worker named etnw-website, not a Pages project). Legal entity behind the site: ETNW Consulting (Einzelunternehmen, Munich).
 
 ## Content source
 
@@ -57,6 +57,7 @@ Add a Datenschutzerklärung (privacy policy) as well if the site has a contact f
 
 ## Technical notes
 
-- Deploy target: Cloudflare Pages, plain static HTML/CSS.
+- Deploy target: Cloudflare Workers static assets, plain static HTML/CSS. The Worker is `etnw-website`, built from the `etnw/etnw-website` GitHub repo on branch `main` with deploy command `npx wrangler deploy`.
+- Servable files live in `public/`, which is the asset directory set in `wrangler.jsonc`. Everything outside `public/` (CLAUDE.md, notes, `.git`) is never published. Do not move the asset directory back to the repo root.
 - Domain: etnw.eu. DNS is being migrated to Cloudflare. Email runs through Microsoft 365 on this domain, if any change touches MX, TXT, or CNAME records, confirm the current record values with Etienne first rather than assuming, mail must not break.
 - Git repo tracked from project start. Commit incrementally, not as one giant commit at the end.
