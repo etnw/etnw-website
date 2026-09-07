@@ -346,6 +346,8 @@ footer {
 .legal p { color: var(--ink-muted); font-size: 0.96rem; max-width: none; }
 .legal p + p { margin-top: 0.9rem; }
 .legal address { font-style: normal; color: var(--ink); line-height: 1.85; }
+.legal ul { color: var(--ink-muted); font-size: 0.96rem; margin-top: 0.9rem; padding-left: 1.25rem; }
+.legal ul li { margin-top: 0.35rem; }
 .legal-intro-rule { width: 40px; height: 3px; background-color: var(--accent); border-radius: 2px; margin-bottom: 2rem; border: 0; }
 
 /* ---------- Mobile refinements ---------- */
