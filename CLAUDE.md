@@ -34,7 +34,7 @@ German law requires a compliant Impressum for a site tied to a German business. 
 - Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Etienne Winkelmuller, same address
 - Standard Haftung für Inhalte, Haftung für Links, and Urheberrecht sections, generic boilerplate, reusable near-verbatim from the TEF site since it's the same entity
 
-Contact details on this Impressum (phone, email) should be etnw.eu's own, confirm with Etienne rather than copying TEF's contact block, the two sites may use different public-facing numbers or addresses.
+Contact details, confirmed by Etienne on 2026-09-07: e-mail contact@etnw.eu (etnw.eu's own, different from TEF's), phone +49 89 55273295 (deliberately the same number TEF uses). These are settled, no need to re-ask.
 
 Add a Datenschutzerklärung (privacy policy) as well if the site has a contact form, analytics, or any embedded third-party scripts or fonts, standard requirement for German sites regardless of business size.
 
